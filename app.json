@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "Baby Monitor",
+    "slug": "baby-monitor",
+    "version": "1.0.0",
+    "platforms": [
+      "ios"
+    ],
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#000000",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vdzeer.babymonitor",
+      "appleTeamId": "RV38A3JNTT",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ],
+        "UIRequiresPersistentWiFi": true,
+        "NSLocalNetworkUsageDescription": "Moonbeam finds the baby unit and parent devices on your home Wi-Fi.",
+        "NSBonjourServices": [
+          "_babymon._tcp",
+          "_babymondev._tcp"
+        ],
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSSupportsLiveActivities": true,
+        "CFBundleDisplayName": "Moonbeam"
+      },
+      "entitlements": {
+        "com.apple.developer.usernotifications.time-sensitive": true
+      }
+    },
+    "plugins": [
+      [
+        "expo-localization",
+        {
+          "supportedLocales": {
+            "ios": [
+              "en",
+              "uk"
+            ]
+          }
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180,
+          "backgroundColor": "#000000"
+        }
+      ],
+      [
+        "@config-plugins/react-native-webrtc",
+        {
+          "cameraPermission": "The camera streams video from the nursery to your parent devices.",
+          "microphonePermission": "The microphone streams sound from the nursery to your parent devices."
+        }
+      ],
+      "./plugins/withSceneDelegate",
+      "@bacons/apple-targets"
+    ],
+    "locales": {
+      "en": "./locales/en.json",
+      "uk": "./locales/uk.json"
+    }
+  }
+}

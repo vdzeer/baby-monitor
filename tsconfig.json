@@ -1,0 +1,9 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    // The protocol modules in src/session/secure import each other with .ts extensions, so that
+    // Node runs them directly in the tests (npm test).
+    "allowImportingTsExtensions": true
+  }
+}

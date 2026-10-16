@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Moonbeam",
+    "NSCameraUsageDescription": "The camera streams video from the nursery to your parent devices.",
+    "NSMicrophoneUsageDescription": "The microphone streams sound from the nursery to your parent devices.",
+    "NSLocalNetworkUsageDescription": "Moonbeam finds the baby unit and parent devices on your home Wi-Fi."
+  }
+}

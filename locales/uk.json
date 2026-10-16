@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Moonbeam",
+    "NSCameraUsageDescription": "Камера транслює відео з дитячої кімнати на батьківські пристрої.",
+    "NSMicrophoneUsageDescription": "Мікрофон транслює звуки з дитячої кімнати на батьківські пристрої.",
+    "NSLocalNetworkUsageDescription": "Moonbeam знаходить радіоняню і батьківські пристрої у вашій домашній мережі Wi-Fi."
+  }
+}
