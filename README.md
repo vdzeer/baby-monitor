@@ -1,5 +1,8 @@
 # Moonbeam: Baby Monitor
 
+[![iOS | iPadOS](https://img.shields.io/badge/platform-iOS%20%7C%20iPadOS-lightgrey)](https://github.com/vdzeer/baby-monitor)
+[![License: MIT](https://img.shields.io/github/license/vdzeer/baby-monitor)](https://github.com/vdzeer/baby-monitor/blob/main/LICENSE)
+
 Moonbeam turns two or more iPhones or iPads into a video baby monitor that works only on your local network. One device, the baby unit, streams its camera and microphone over WebRTC to one or more parent devices. There is no server, account or cloud service: discovery, pairing and streaming happen directly between the devices.
 
 The app is built with Expo (SDK 57) and React Native, plus a local Swift module for networking, audio and camera processing. It runs on iOS and iPadOS only. The UI is in English and Ukrainian.
